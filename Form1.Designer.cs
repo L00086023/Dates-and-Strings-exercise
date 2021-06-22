@@ -48,7 +48,7 @@ namespace Dates_and_Strings_exercise
             this.lblArrivalDate.AutoSize = true;
             this.lblArrivalDate.Location = new System.Drawing.Point(180, 66);
             this.lblArrivalDate.Name = "lblArrivalDate";
-            this.lblArrivalDate.Size = new System.Drawing.Size(70, 14);
+            this.lblArrivalDate.Size = new System.Drawing.Size(84, 17);
             this.lblArrivalDate.TabIndex = 0;
             this.lblArrivalDate.Text = "Arrival date:";
             // 
@@ -57,7 +57,7 @@ namespace Dates_and_Strings_exercise
             this.lblDepartureDate.AutoSize = true;
             this.lblDepartureDate.Location = new System.Drawing.Point(180, 115);
             this.lblDepartureDate.Name = "lblDepartureDate";
-            this.lblDepartureDate.Size = new System.Drawing.Size(93, 14);
+            this.lblDepartureDate.Size = new System.Drawing.Size(112, 17);
             this.lblDepartureDate.TabIndex = 1;
             this.lblDepartureDate.Text = "Departure  date:";
             // 
@@ -66,7 +66,7 @@ namespace Dates_and_Strings_exercise
             this.lblNumberOfNights.AutoSize = true;
             this.lblNumberOfNights.Location = new System.Drawing.Point(180, 162);
             this.lblNumberOfNights.Name = "lblNumberOfNights";
-            this.lblNumberOfNights.Size = new System.Drawing.Size(100, 14);
+            this.lblNumberOfNights.Size = new System.Drawing.Size(120, 17);
             this.lblNumberOfNights.TabIndex = 2;
             this.lblNumberOfNights.Text = "Number of nights:";
             // 
@@ -75,7 +75,7 @@ namespace Dates_and_Strings_exercise
             this.lblTotalPrice.AutoSize = true;
             this.lblTotalPrice.Location = new System.Drawing.Point(180, 211);
             this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(63, 14);
+            this.lblTotalPrice.Size = new System.Drawing.Size(75, 17);
             this.lblTotalPrice.TabIndex = 3;
             this.lblTotalPrice.Text = "Total price";
             // 
@@ -84,7 +84,7 @@ namespace Dates_and_Strings_exercise
             this.lblAvgPricePerNight.AutoSize = true;
             this.lblAvgPricePerNight.Location = new System.Drawing.Point(180, 269);
             this.lblAvgPricePerNight.Name = "lblAvgPricePerNight";
-            this.lblAvgPricePerNight.Size = new System.Drawing.Size(109, 14);
+            this.lblAvgPricePerNight.Size = new System.Drawing.Size(131, 17);
             this.lblAvgPricePerNight.TabIndex = 4;
             this.lblAvgPricePerNight.Text = "Avg. price per night";
             // 
@@ -133,7 +133,7 @@ namespace Dates_and_Strings_exercise
             // 
             this.dtPikrArrivalDate.Location = new System.Drawing.Point(383, 77);
             this.dtPikrArrivalDate.Name = "dtPikrArrivalDate";
-            this.dtPikrArrivalDate.Size = new System.Drawing.Size(97, 22);
+            this.dtPikrArrivalDate.Size = new System.Drawing.Size(246, 22);
             this.dtPikrArrivalDate.TabIndex = 12;
             this.dtPikrArrivalDate.ValueChanged += new System.EventHandler(this.dtPikrArrivalDate_ValueChanged);
             // 
@@ -141,7 +141,7 @@ namespace Dates_and_Strings_exercise
             // 
             this.dtPkrDepartureDate.Location = new System.Drawing.Point(388, 115);
             this.dtPkrDepartureDate.Name = "dtPkrDepartureDate";
-            this.dtPkrDepartureDate.Size = new System.Drawing.Size(92, 22);
+            this.dtPkrDepartureDate.Size = new System.Drawing.Size(241, 22);
             this.dtPkrDepartureDate.TabIndex = 13;
             this.dtPkrDepartureDate.ValueChanged += new System.EventHandler(this.dtPkrDepartureDate_ValueChanged);
             // 
@@ -164,6 +164,7 @@ namespace Dates_and_Strings_exercise
             this.Controls.Add(this.lblArrivalDate);
             this.Name = "Form1";
             this.Text = "Reservations";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

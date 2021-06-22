@@ -22,6 +22,21 @@ namespace Dates_and_Strings_exercise
         public Form1()
         {
             InitializeComponent();
+            
+        }
+        private void Form1_Load(object sender, System.EventArgs e)
+        {
+            DateTimePicker dtPikrArrivalDate  = new DateTimePicker();
+            dtPikrArrivalDate.Text = DateTime.Now.ToShortDateString(); 
+            dtPikrArrivalDate.Value.Date.ToString("M/d/yyyy");
+
+
+            DateTimePicker dtPikrDepartureDate = new DateTimePicker();
+            dtPkrDepartureDate.Value = DateTime.Today.AddDays(3); 
+            dtPkrDepartureDate.Value.Date.ToString("M/d/yyyy");
+          /*  dtPkrDepartureDate.Value = DateTime.Today.AddDays(3).ToString("M/d/yyyy"); */
+
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
